@@ -1,59 +1,59 @@
 # Chocolate Shisha Store NG – Free Mobile App (PWA)
 
-This is a **free Progressive Web App** that wraps your Menurite menu so customers can install it on their phone like a real app (no App Store / Play Store fees, no Menurite branding on the app shell).
+This is a **free Progressive Web App** that wraps your Menurite menu so customers can install it on their phone like a real app.
 
-## What’s included
-- Full-screen mobile experience of your menu
-- Your own logo as the app icon
-- Works offline for the app shell (menu content still needs internet)
-- Installable on Android & iPhone home screen
-- No Menurite logo or branding added by us
-
-> Note: The menu content itself comes from Menurite, so any footer links that appear inside the menu (Privacy, Report Menu, etc.) are part of their page and cannot be removed from an iframe.
+### Features
+- Beautiful splash screen showing **your official logo**
+- Full-screen menu experience
+- Your logo as the Home Screen icon + favicon
+- Works on Android & iPhone
+- Completely free (no App Store / Play Store fees)
+- No Menurite branding on the app shell
 
 ---
 
-## How to use (3 free options)
+## Files included
+- `index.html` – Main app with splash screen
+- `manifest.json` – App name, icons, theme
+- `sw.js` – Service worker
+- `icon-192.png` & `icon-512.png` – Your logo (Home Screen icons)
+- `favicon.ico` – Browser tab icon
+- `README.md` – This file
 
-### Option 1 – Quickest (GitHub Pages – recommended)
-1. Create a free GitHub account if you don’t have one.
-2. Create a new repository (e.g. `choco-shisha-app`).
-3. Upload **all files** from this folder (`index.html`, `manifest.json`, `sw.js`, `icon-192.png`, `icon-512.png`).
-4. Go to Settings → Pages → Source: Deploy from branch → main → / (root) → Save.
-5. Your app will be live at:  
+---
+
+## How to upload to GitHub Pages
+
+1. Create a free GitHub account → github.com
+2. Click **+** → **New repository**
+3. Name it e.g. `choco-shisha-app` → make it **Public** → Create
+4. Click **uploading an existing file**
+5. Upload **all** these files:
+   - index.html
+   - manifest.json
+   - sw.js
+   - icon-192.png
+   - icon-512.png
+   - favicon.ico
+6. Click **Commit changes**
+7. Go to **Settings** → **Pages**
+8. Source: **main** branch → **/ (root)** → Save
+9. Wait 1 minute → your live link appears:
    `https://YOUR-USERNAME.github.io/choco-shisha-app/`
-
-### Option 2 – Netlify Drop (no account needed for test)
-1. Go to https://app.netlify.com/drop
-2. Drag the whole folder onto the page.
-3. You get a free URL instantly.
-
-### Option 3 – Any free host
-Upload the files to any static host (Vercel, Cloudflare Pages, Firebase Hosting, etc.).
 
 ---
 
 ## How customers install the app
 
-**Android (Chrome)**
-1. Open the link in Chrome.
-2. Tap the menu (⋮) → “Install app” or “Add to Home screen”.
-3. Confirm. The app appears with your logo.
+**Android (Chrome)**  
+Open the link → Menu (⋮) → **Install app** or **Add to Home screen**
 
-**iPhone (Safari)**
-1. Open the link in Safari.
-2. Tap the Share button → “Add to Home Screen”.
-3. Edit the name if you want → Add.
-4. The app opens full-screen without Safari bars.
+**iPhone (Safari)**  
+Open the link → Share button → **Add to Home Screen**
+
+The app will appear with your logo and open full-screen.
 
 ---
 
-## Customisation (optional)
-- Change `theme_color` / `background_color` in `manifest.json` and the CSS in `index.html`.
-- Replace the icon files with your own 192×192 and 512×512 PNGs.
-- Update the title or short name anytime.
-
----
-
-Built free for Chocolate Shisha Store NG 🍫💨  
-Location: 13 Odewale street Alausa, Ikeja, Lagos
+Built for Chocolate Shisha Store NG 🍫💨  
+13 Odewale street Alausa, Ikeja, Lagos

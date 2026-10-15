@@ -1,11 +1,12 @@
 // Simple service worker for offline shell (iframe still needs network)
-const CACHE_NAME = 'choco-shisha-v1';
+const CACHE_NAME = 'choco-shisha-v2';
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
   './icon-192.png',
-  './icon-512.png'
+  './icon-512.png',
+  './favicon.ico'
 ];
 
 self.addEventListener('install', (event) => {
